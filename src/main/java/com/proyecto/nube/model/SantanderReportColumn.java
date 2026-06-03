@@ -1,0 +1,99 @@
+package com.proyecto.nube.model;
+
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
+@Getter
+@RequiredArgsConstructor
+public enum SantanderReportColumn {
+
+    // DATOS CUENTA
+    CODIGO_DEL_PRODUCTO("CODIGO DEL PRODUCTO"),
+    NUMERO_DE_SOLICITUD("NUMERO DE SOLICITUD"),
+    CODIGO_DE_REGION("CODIGO DE REGION"),
+    CODIGO_DE_AGENCIA("CODIGO DE AGENCIA"),
+    NOMBRE_DE_SOLICITANTE("NOMBRE DE SOLICITANTE"),
+    APELLIDO_DEL_SOLICITANTE("APELLIDO DEL SOLICITANTE"),
+    FECHA_NACIMIENTO("FECHA NACIMIENTO"),
+    PROFESION_U_OCUPACION("PROFESION U OCUPACION"),
+    TIPO_DE_DOCUMENTO("TIPO DE DOCUMENTO"),
+    DOCUMENTO_DE_IDENTIDAD("DOCUMENTO DE IDENTIDAD"),
+    INGRESOS_MENSUALES_EN_SOLES("INGRESOS MENSUALES EN SOLES"),
+
+    DIRECC_CORRESPONDENCIA_1("DIRECC. CORRESPONDENCIA 1"),
+    DIRECC_CORRESPONDENCIA_2("DIRECC. CORRESPONDENCIA 2"),
+    DIRECC_CORRESPONDENCIA_3("DIRECC. CORRESPONDENCIA 3"),
+    DIRECC_EXTRA("DIRECC EXTRA"),
+
+    CODIGO_UBIGEO("CODIGO UBIGEO"),
+    DISTRITO("DISTRITO"),
+    PROVINCIA("PROVINCIA"),
+    DEPARTAMENTO("DEPARTAMENTO"),
+
+    TELEFONO_DEL_CLIENTE("TELEFONO DEL CLIENTE"),
+    NOMBRE_EN_TARJETA("NOMBRE EN TARJETA"),
+    LINEA_DE_CREDITO("LINEA DE CREDITO"),
+    CICLO_DE_FACTURACION("CICLO DE FACTURACION"),
+
+    DECLARACION_CLIENTE_PEP("DECLARACION CLIENTE PEP"),
+    CODIGO_DE_PERFIL("CODIGO DE PERFIL"),
+    LIMITE_PARA_DISP_EFECTIVO("LIMITE PARA DISP.EFECTIVO"),
+
+    NUMERO_CUENTA("NUMERO CUENTA"),
+    DIA_APERTURA_CUENTA("DIA APERTURA CUENTA"),
+    ESTADO_DE_LA_CUENTA("ESTADO DE LA CUENTA"),
+    BLOQUEO_CANCELADO_CUENTA("BLOQUEO/CANCELADO DE LA CUENTA"),
+    FECHA_BLOQUEO_CUENTA("FECHA BLOQUEO CUENTA"),
+
+    NUMERO_DE_TARJETA("NUMERO DE TARJETA"),
+    NUMERO_DE_BIN("NUMERO DE BIN"),
+    CODIGO_DE_REFERIDO("CODIGO DE REFERIDO"),
+
+    SEXO("SEXO"),
+    PAIS_DOCUMENTO("PAIS DOCUMENTO"),
+    NACIONALIDAD("NACIONALIDAD"),
+    ESTADO_CIVIL("ESTADO CIVIL"),
+
+    CORREO_ELECTRONICO("Correo electronico"),
+    FECHA_CREACION_USUARIO("Fecha de creación del usuario"),
+
+    // EVENTOS
+    ID_UNICO_DEL_EVENTO("Id único del evento"),
+    ID_DEL_EVENTO("Id del evento"),
+    TIPO_DE_EVENTO("Tipo de Evento"),
+    FECHA_INGRESO_TRANSACCION("Fecha de ingreso de la transacción al sistema"),
+
+    ID_LINEA_CREDITO("ID de la línea de crédito"),
+    ID_USUARIO("ID del usuario"),
+
+    FECHA_LOCAL_TRANSACCION("Fecha local de la transacción"),
+    FECHA_CIERRE_ESTADO_CUENTA("Fecha de cierre del estado de cuenta"),
+
+    ID_REFERENCIA("ID de referencia"),
+
+    CATEGORIA_COMERCIO("Categoria del comercio"),
+    MODO_CAPTURA_TRANSACCION("Modo de captura de la transacción"),
+    CANAL_TRANSACCION("Canal de la transacción"),
+
+    MONTO_TRANSACCION("Monto de la transacción"),
+
+    CUOTAS_TOTALES_TRANSACCION("Cuotas totales de la transacción"),
+    NUMERO_CUOTA("Número de cuota"),
+
+    RATE_APLICADO_TRANSACCION("Rate aplicado a la transacción"),
+
+    FECHA_VENCIMIENTO_ESTADO_CUENTA("Fecha de vencimiento del estado de cuenta"),
+
+    DESCRIPCION("Descripción"),
+    TIPO_OPERACION("Tipo de operación"),
+
+    ID_TERMINAL_COMERCIO("ID de la terminal del comercio"),
+    CIUDAD_COMERCIO("Ciudad del comercio"),
+
+    ID_TRANSACCION_ORIGINAL("ID transaccion original"),
+
+    TIPO_CAMBIO("Tipo de Cambio"),
+    MONEDA_EVENTO("Moneda del evento");
+
+    private final String header;
+}
