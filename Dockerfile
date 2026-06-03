@@ -1,17 +1,5 @@
-FROM eclipse-temurin:17-jdk AS build
+FROM amazoncorretto:17-alpine-jdk
 
-WORKDIR /app
+COPY target/spring_converter_csvs_to_excel-0.0.1-SNAPSHOT.jar /api-v1.jar
 
-COPY . .
-
-RUN ./mvnw clean package -DskipTests
-
-FROM eclipse-temurin:17-jre
-
-WORKDIR /app
-
-COPY --from=build /app/target/*.jar app.jar
-
-EXPOSE 8080
-
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "/api-v1.jar"]
